@@ -14,7 +14,8 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.8.2",
             "com.codeborne:selenide:6.3.5",
             'org.assertj:assertj-core:3.23.1',
-            'org.hamcrest:hamcrest:2.2'
+            'org.hamcrest:hamcrest:2.2',
+            'com.codeborne:pdf-test:1.7.0'
     )
 
 }
