@@ -4,6 +4,7 @@ import com.codeborne.pdftest.PDF;
 import com.codeborne.pdftest.matchers.ContainsExactText;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.impl.FileContent;
+import com.codeborne.xlstest.XLS;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -38,4 +39,19 @@ public class SelenideDownloadTest {
        PDF pdf = new PDF(stream);
         Assertions.assertEquals(166, pdf.numberOfPages);
     }
+
+    @Test
+    void xlsParsingTest() throws Exception {
+        InputStream stream = getClass().getClassLoader().getResourceAsStream("xls/18. Файл!!!!_2.xlsx");
+        XLS xls = new XLS(stream);
+        String stringCellValue = xls.excel.getSheetAt(0).getRow(3).getCell(1).getStringCellValue();
+        assertThat(stringCellValue).contains("Аврора");
+
+    }
+
+
+
+
+
+
 }

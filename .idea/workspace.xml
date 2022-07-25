@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c495c4b-b243-4aa6-8d57-0b7b5c52dfb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadOption2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/PDF/junit-user-guide-5.8.2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/xls/18. Файл!!!!_2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" afterDir="false" />
@@ -71,13 +68,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\com_NewFiles\src\test\resources\xls" />
       <recent name="C:\Users\User\IdeaProjects\com_NewFiles\src\test\resources\PDF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SelenideDownloadTest.pdfParsingTest">
+  <component name="RunManager" selected="Gradle.SelenideDownloadTest.xlsParsingTest">
     <configuration name="SelenideDownloadOption2.downloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,8 +162,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SelenideDownloadTest.xlsParsingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.FromLecture.SelenideDownloadTest.xlsParsingTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest" />
         <item itemvalue="Gradle.SelenideDownloadTest.pdfParsingTest" />
         <item itemvalue="Gradle.SelenideDownloadOption2.downloadTest" />
         <item itemvalue="Gradle.SelenideDownloadTest" />
@@ -194,6 +216,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
