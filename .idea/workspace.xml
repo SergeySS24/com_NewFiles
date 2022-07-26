@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c495c4b-b243-4aa6-8d57-0b7b5c52dfb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/xls/18. Файл!!!!_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/tead.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" afterDir="false" />
@@ -48,6 +48,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="useless_branch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,28 +80,7 @@
       <recent name="com.FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SelenideDownloadTest.xlsParsingTest">
-    <configuration name="SelenideDownloadOption2.downloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadOption2.downloadTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SelenideDownloadTest.pdfParsingTest">
     <configuration name="SelenideDownloadTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -120,12 +104,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SelenideDownloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SelenideDownloadTest.csvParsingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.csvParsingTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SelenideDownloadTest.downloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.downloadTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -167,15 +172,13 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.xlsParsingTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.FromLecture.SelenideDownloadTest.xlsParsingTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest" />
         <item itemvalue="Gradle.SelenideDownloadTest.pdfParsingTest" />
-        <item itemvalue="Gradle.SelenideDownloadOption2.downloadTest" />
-        <item itemvalue="Gradle.SelenideDownloadTest" />
-        <item itemvalue="Gradle.SelenideDownloadTest (1)" />
+        <item itemvalue="Gradle.SelenideDownloadTest.downloadTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest.csvParsingTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -216,5 +219,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

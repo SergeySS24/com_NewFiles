@@ -5,13 +5,16 @@ import com.codeborne.pdftest.matchers.ContainsExactText;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.impl.FileContent;
 import com.codeborne.xlstest.XLS;
+import com.opencsv.CSVReader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -19,6 +22,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class SelenideDownloadTest {
+
+    ClassLoader cl = SelenideDownloadTest.class.getClassLoader();
 
     @Test
     void downloadTest() throws Exception {
@@ -45,13 +50,32 @@ public class SelenideDownloadTest {
         InputStream stream = getClass().getClassLoader().getResourceAsStream("xls/18. Файл!!!!_2.xlsx");
         XLS xls = new XLS(stream);
         String stringCellValue = xls.excel.getSheetAt(0).getRow(3).getCell(1).getStringCellValue();
-        assertThat(stringCellValue).contains("Аврора");
-
+        org.assertj.core.api.Assertions.assertThat(stringCellValue).contains("Зайка");
     }
 
+    @Test
+    void csvParsingTest() throws Exception {
+        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("csv/tead.txt");
+            CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
+
+                List<String[]> content = reader.readAll();
+                org.assertj.core.api.Assertions.assertThat(content).contains(
+                        new String[] {"Name", "Surname"},
+                        new String[] {"Sergey","Starostin"},
+                        new String[] {"Vadim","Lester"}
+                );
+            }
+    }
+        }
 
 
 
 
 
-}
+
+
+
+
+
+
+
