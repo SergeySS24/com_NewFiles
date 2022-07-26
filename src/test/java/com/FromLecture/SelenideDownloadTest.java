@@ -15,6 +15,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
+import java.util.zip.ZipInputStream;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -49,8 +52,8 @@ public class SelenideDownloadTest {
     void xlsParsingTest() throws Exception {
         InputStream stream = getClass().getClassLoader().getResourceAsStream("xls/18. Файл!!!!_2.xlsx");
         XLS xls = new XLS(stream);
-        String stringCellValue = xls.excel.getSheetAt(0).getRow(3).getCell(1).getStringCellValue();
-        org.assertj.core.api.Assertions.assertThat(stringCellValue).contains("Зайка");
+        String stringCellValue = xls.excel.getSheetAt(0).getRow(5).getCell(1).getStringCellValue();
+        org.assertj.core.api.Assertions.assertThat(stringCellValue).contains("Зоя");
     }
 
     @Test
@@ -66,7 +69,22 @@ public class SelenideDownloadTest {
                 );
             }
     }
+
+    @Test
+    void zipParcingTest() throws Exception {
+        //ZipFile zf = new ZipFile(new File())
+        InputStream is = new ZipInputStream(getClass().getClassLoader().getResourceAsStream("zip/ht_5.zip"));
+        ZipEntry entry;
+        //while ((entry = is.getNextEntry()) != null ) {
+         //   entry.getName(org.assertj.core.api.Assertions.assertThat(entry.getName()).isEqualTo("ht_5.zip");
+
         }
+
+    }
+
+
+
+
 
 
 
