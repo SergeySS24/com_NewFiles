@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c495c4b-b243-4aa6-8d57-0b7b5c52dfb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/xls/18. Файл!!!!_2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2c495c4b-b243-4aa6-8d57-0b7b5c52dfb7" name="Changes" comment="added second commitss" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,6 +199,14 @@
       <option name="presentableId" value="Default" />
       <updated>1658686405364</updated>
     </task>
+    <task id="LOCAL-00001" summary="added second commitss">
+      <created>1658783821367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658783821367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,5 +219,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="added second commitss" />
+    <option name="LAST_COMMIT_MESSAGE" value="added second commitss" />
   </component>
 </project>
