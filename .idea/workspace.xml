@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c495c4b-b243-4aa6-8d57-0b7b5c52dfb7" name="Changes" comment="added second commitss">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/zip/ht_5.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/FromLecture/SelenideDownloadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/csv/tead.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/csv/tead.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="com.FromLecture" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SelenideDownloadTest (1)">
+  <component name="RunManager" selected="Gradle.SelenideDownloadTest.zipParcingTest">
     <configuration name="SelenideDownloadTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,6 +95,27 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.FromLecture.SelenideDownloadTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SelenideDownloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -125,12 +146,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SelenideDownloadTest.downloadTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SelenideDownloadTest.xlsParsingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.downloadTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.xlsParsingTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -146,41 +167,18 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SelenideDownloadTest.pdfParsingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SelenideDownloadTest.zipParcingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.pdfParsingTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.FromLecture.SelenideDownloadTest.zipParcingTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SelenideDownloadTest.xlsParsingTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.FromLecture.SelenideDownloadTest.xlsParsingTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SelenideDownloadTest (1)" />
+        <item itemvalue="Gradle.SelenideDownloadTest.zipParcingTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest" />
         <item itemvalue="Gradle.SelenideDownloadTest.csvParsingTest" />
-        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest (1)" />
-        <item itemvalue="Gradle.SelenideDownloadTest.pdfParsingTest" />
-        <item itemvalue="Gradle.SelenideDownloadTest.downloadTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest.xlsParsingTest" />
+        <item itemvalue="Gradle.SelenideDownloadTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -221,5 +219,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

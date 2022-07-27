@@ -22,6 +22,7 @@ import java.util.zip.ZipInputStream;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.contentOf;
 
 
 public class SelenideDownloadTest {
@@ -33,7 +34,7 @@ public class SelenideDownloadTest {
         open("https://github.com/junit-team/junit5/blob/main/README.md");
         File textFile = $("#raw-url").download();
 
-        try (InputStream is = new FileInputStream(textFile)){
+        try (InputStream is = new FileInputStream(textFile)) {
             byte[] fileContent = is.readAllBytes();
             String strContent = new String(fileContent, StandardCharsets.UTF_8);
 
@@ -43,8 +44,8 @@ public class SelenideDownloadTest {
 
     @Test
     void pdfParsingTest() throws Exception {
-       InputStream stream = getClass().getClassLoader().getResourceAsStream("pdf/junit-user-guide-5.8.2.pdf");
-       PDF pdf = new PDF(stream);
+        InputStream stream = getClass().getClassLoader().getResourceAsStream("pdf/junit-user-guide-5.8.2.pdf");
+        PDF pdf = new PDF(stream);
         Assertions.assertEquals(166, pdf.numberOfPages);
     }
 
@@ -52,35 +53,40 @@ public class SelenideDownloadTest {
     void xlsParsingTest() throws Exception {
         InputStream stream = getClass().getClassLoader().getResourceAsStream("xls/18. Файл!!!!_2.xlsx");
         XLS xls = new XLS(stream);
-        String stringCellValue = xls.excel.getSheetAt(0).getRow(5).getCell(1).getStringCellValue();
-        org.assertj.core.api.Assertions.assertThat(stringCellValue).contains("Зоя");
+
+        String stringCellValue = xls.excel.getSheetAt(0).getRow(4).getCell(0).getStringCellValue();
+
+        assertThat(stringCellValue).contains("Зоя");
     }
 
     @Test
     void csvParsingTest() throws Exception {
-        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("csv/tead.txt");
-            CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
+        try (InputStream stream = cl.getResourceAsStream("csv/tead.txt");
+             CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
 
-                List<String[]> content = reader.readAll();
-                org.assertj.core.api.Assertions.assertThat(content).contains(
-                        new String[] {"Name", "Surname"},
-                        new String[] {"Sergey","Starostin"},
-                        new String[] {"Vadim","Lester"}
-                );
-            }
+            List<String[]> content = reader.readAll();
+            org.assertj.core.api.Assertions.assertThat(content).contains(
+                    new String[]{"Name", "Surname"},
+                    new String[]{"Sergey", "Starostin"},
+                    new String[]{"Vadim", "Lester"}
+            );
+        }
     }
 
     @Test
     void zipParcingTest() throws Exception {
-        //ZipFile zf = new ZipFile(new File())
-        InputStream is = new ZipInputStream(getClass().getClassLoader().getResourceAsStream("zip/ht_5.zip"));
+        ZipFile zf = new ZipFile(new File("src/test/resources/zip/ht_5.zip"));
+        ZipInputStream is = new ZipInputStream(getClass().getClassLoader().getResourceAsStream("zip/ff.jpg"));
         ZipEntry entry;
-        //while ((entry = is.getNextEntry()) != null ) {
-         //   entry.getName(org.assertj.core.api.Assertions.assertThat(entry.getName()).isEqualTo("ht_5.zip");
+        while ((entry = is.getNextEntry()) != null ) {
+         org.assertj.core.api.Assertions.assertThat(entry.getName()).isEqualTo("ht_5.zip");
+         try (InputStream inputStream = zf.getInputStream(entry)) {
 
+         }
         }
-
     }
+
+}
 
 
 
